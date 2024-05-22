@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GUI</string>
+    <string name="datum">Fr.,19.Apr.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="angestellte">Hallo Angestellte</string>
+    <string name="route">Hallo Route</string>
+    <string name="object">Hallo Object</string>
+    <string name="degrees">1°</string>
+    <string name="warnung">Schneepflug defekt!</string>
+    <string name="warnung2">Streugutbehälter leer!</string>
+    <string name="warnung3">Dachlawine OS Leipzig!</string>
+    <string name="hilfe"><u>Hilfe</u></string>
+    <string name="anmelden">Anmelden</string>
+    <string name="hintPassword">Passwort</string>
+    <string name="hintEmail">E-Mail</string>
+    <string name="logeDescription">Loge</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
