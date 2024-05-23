@@ -3,20 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/tabBarFragment">
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.joxoo.outtrac.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        android:id="@+id/tabBarFragment"
+        android:name="com.joxoo.outtrac.TabBarFragment"
+        android:label="fragment_tab_bar"
+        tools:layout="@layout/fragment_tab_bar" >
+        <action
+            android:id="@+id/action_tabBarFragment_to_employeeDetailFragment"
+            app:destination="@id/employeeDetailFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.joxoo.outtrac.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/objectFragment2"
-        android:name="com.joxoo.outtrac.ObjectFragment"
-        android:label="fragment_object"
-        tools:layout="@layout/fragment_object" />
+        android:id="@+id/employeeDetailFragment"
+        android:name="com.joxoo.outtrac.EmployeeDetailFragment"
+        android:label="fragment_employee_detail"
+        tools:layout="@layout/fragment_employee_detail" />
 </navigation>

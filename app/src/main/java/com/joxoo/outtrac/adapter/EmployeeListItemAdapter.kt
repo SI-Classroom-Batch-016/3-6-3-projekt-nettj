@@ -6,10 +6,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.joxoo.outtrac.data.model.Employee
 import com.joxoo.outtrac.databinding.EmployeeListItemBinding
 
-class EmployeeItemAdapter(
+class EmployeeListItemAdapter(
     private val dataset: List<Employee>,
     val itemClickedCallback: (Employee) -> Unit
-): RecyclerView.Adapter<EmployeeItemAdapter.ItemViewHolder>(){
+): RecyclerView.Adapter<EmployeeListItemAdapter.ItemViewHolder>(){
 
     inner class ItemViewHolder(val binding: EmployeeListItemBinding) : RecyclerView.ViewHolder(binding.root)
 

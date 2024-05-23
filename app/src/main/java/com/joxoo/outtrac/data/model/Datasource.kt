@@ -2,7 +2,7 @@ package com.joxoo.outtrac.data.model
 
 class Datasource {
 
-    private val employees: List<Employee> = listOf(
+    private val employees: MutableList<Employee> = mutableListOf(
         Employee(
             "urn:employee:1",
             Person(
@@ -332,7 +332,7 @@ class Datasource {
         return employees.find { it.urn == urn }
     }
 
-    fun getEmployees(): List<Employee> {
+    fun getEmployees(): MutableList<Employee> {
         return employees
     }
 
