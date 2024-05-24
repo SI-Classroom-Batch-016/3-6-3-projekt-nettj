@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/employeeListItem"
     android:layout_width="match_parent"
@@ -9,8 +9,6 @@
     android:background="@color/md_theme_dark_surface"
     android:orientation="horizontal">
 
-
-        >
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="32dp"
@@ -27,28 +25,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|start"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="4dp"
+        android:paddingHorizontal="16dp"
+        app:layout_alignSelf="center"
+        app:layout_flexGrow="1"
         android:text="Kevin Arnoldt"
         android:textAlignment="textStart"
         android:textColor="@color/md_theme_dark_onSurfaceVariant"
         android:textSize="16dp" />
 
     <com.mikhaellopez.circularprogressbar.CircularProgressBar
-        android:id="@+id/circularProgressBar"
+        android:id="@+id/workedHoursCPB"
         android:layout_width="32dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="32dp"
+        app:layout_alignSelf="center"
         app:cpb_progress_max="100"
-        app:cpb_progress="50"
+        app:cpb_progress="80"
         app:cpb_start_angle="180"
-        android:layout_alignParentEnd="true"
         app:cpb_progressbar_color_start="@color/md_theme_dark_inverseSurface"
         app:cpb_background_progressbar_color="#b6bbd8"
         app:cpb_background_progressbar_width="5dp"
         app:cpb_progress_direction="to_right"
         app:cpb_progressbar_color="#3f51b5"
-        app:cpb_progressbar_width="10dp"
+        app:cpb_progressbar_width="5dp"
         app:cpb_round_border="false" />
 
-</RelativeLayout>
+</com.google.android.flexbox.FlexboxLayout>

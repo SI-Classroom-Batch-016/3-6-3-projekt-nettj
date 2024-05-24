@@ -22,7 +22,8 @@ class EmployeeListItemAdapter(
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
         holder.binding.nameTV.text = "${item.person.firstname} ${item.person.lastname}"
-
+        holder.binding.workedHoursCPB.progressMax = item.workLogSummary.monthHours
+        holder.binding.workedHoursCPB.progress = item.workLogSummary.workedMonthHours
         holder.binding.root.setOnClickListener {
             itemClickedCallback(item)
         }
