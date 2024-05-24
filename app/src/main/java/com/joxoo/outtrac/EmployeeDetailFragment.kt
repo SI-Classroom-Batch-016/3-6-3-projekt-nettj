@@ -34,6 +34,7 @@ class EmployeeDetailFragment : Fragment() {
             binding.employeeNameTV.text = getFullName(it)
             binding.employeeAddressTV.text = getEmployeeAddress(it.person)
             binding.employeeOrtTV.text = it.person.address.city
+            binding.circularProgressBar.progress = employeeStatus(it)
         }
 
         requireActivity().findViewById<MaterialToolbar>(R.id.toolbar).title = viewModel.selectedEmployee.value?.person?.firstname
@@ -46,6 +47,10 @@ class EmployeeDetailFragment : Fragment() {
 
     private fun getEmployeeAddress(person: Person): String {
         return person.address.street
+    }
+
+    private fun employeeStatus(employee: Employee): Float {
+        return employee.workLogSummary.workedMonthHours
     }
 
 

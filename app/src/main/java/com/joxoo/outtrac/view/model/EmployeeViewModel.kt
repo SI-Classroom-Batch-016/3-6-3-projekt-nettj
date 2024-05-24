@@ -16,8 +16,11 @@ class EmployeeViewModel: ViewModel() {
     private var _selectedEmployee = MutableLiveData<Employee>()
     val selectedEmployee: LiveData<Employee>
         get() = _selectedEmployee
+
+
     fun selectedEmployees(it: Employee) {
         _selectedEmployee.value = it
 
     }
+
 }
