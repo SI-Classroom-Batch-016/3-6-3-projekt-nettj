@@ -11,11 +11,11 @@ import com.joxoo.outtrac.databinding.FragmentObjectBinding
 
 class ObjectFragment : Fragment() {
 
-    lateinit var binding: FragmentObjectBinding
+    private lateinit var binding: FragmentObjectBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentObjectBinding.inflate(layoutInflater)
         return binding.root
     }

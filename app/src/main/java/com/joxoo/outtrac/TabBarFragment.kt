@@ -6,7 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.Toolbar
+import androidx.appcompat.content.res.AppCompatResources.getDrawable
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.tabs.TabLayout
@@ -27,8 +28,27 @@ class TabBarFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setUpTabs()
+        setupNavigation()
     }
 
+    private fun setupNavigation() {
+        val toolbar = requireActivity().findViewById<MaterialToolbar>(R.id.toolbar)
+
+        findNavController().addOnDestinationChangedListener() { _, destination, _ ->
+            if(destination.id == R.id.tabBarFragment) {
+                toolbar.navigationIcon = getDrawable(requireContext(), R.drawable.baseline_menu_24)
+            } else {
+                toolbar.navigationIcon = getDrawable(requireContext(), R.drawable.baseline_arrow_back_24)
+            }
+        }
+        toolbar.setNavigationOnClickListener {
+            findNavController().currentDestination?.id?.let { id ->
+                if (id != R.id.tabBarFragment) {
+                    findNavController().navigateUp()
+                }
+            }
+        }
+    }
     private fun setUpTabs() {
         Log.d("MainActivity", "Setting up tabs ${binding.tabLayout2.tabCount}")
         val adapter = TabPagerAdapter(requireActivity(), binding.tabLayout2.tabCount)

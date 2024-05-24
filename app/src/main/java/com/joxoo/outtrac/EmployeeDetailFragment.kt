@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import com.google.android.material.appbar.MaterialToolbar
 import com.joxoo.outtrac.data.model.Employee
 import com.joxoo.outtrac.databinding.FragmentEmployeeDetailBinding
 import com.joxoo.outtrac.view.model.EmployeeViewModel
@@ -32,10 +33,14 @@ class EmployeeDetailFragment : Fragment() {
             binding.employeeNameTV.text = getFullName(it)
         }
 
+        requireActivity().findViewById<MaterialToolbar>(R.id.toolbar).title = viewModel.selectedEmployee.value?.person?.firstname
+
     }
 
     private fun getFullName(employee: Employee): String {
         return "${employee.person.firstname} ${employee.person.lastname}"
     }
+
+
 
 }
