@@ -10,80 +10,321 @@
 
     <com.mikhaellopez.circularprogressbar.CircularProgressBar
         android:id="@+id/circularProgressBar"
-        android:layout_width="250dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:cpb_progress_max="100"
+        android:layout_marginTop="16dp"
+        app:cpb_background_progressbar_color="@color/md_theme_dark_primaryContainer"
+        app:cpb_background_progressbar_width="15dp"
         app:cpb_progress="50"
-        app:cpb_start_angle="180"
-        app:cpb_progressbar_color_start="@color/md_theme_light_onTertiary"
-        app:cpb_background_progressbar_color="#b6bbd8"
-        app:cpb_background_progressbar_width="5dp"
         app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="100"
         app:cpb_progressbar_color="#3f51b5"
-        app:cpb_progressbar_width="10dp"
-        app:cpb_round_border="false" />
+        app:cpb_progressbar_color_start="@color/md_theme_dark_inverseSurface"
+        app:cpb_progressbar_width="15dp"
+        app:cpb_round_border="false"
+        app:cpb_start_angle="180" />
 
-    <com.google.android.material.card.MaterialCardView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:layout_marginTop="36dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            >
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/employeeCV"
+            android:layout_width="186dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/person"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Datenblatt"
-                android:textColor="@color/md_theme_light_surface"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/employeeNameTV"
+                <ImageView
+                    android:id="@+id/employeeIV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/person" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/employeeDatenTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Datenblatt"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/employeeNameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Karl Gustav"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/employeeAddressTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heinrich-Heine-Straße"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/employeePLZTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5a"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/employeeOrtTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="04425 Taucha"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tourCV"
+            android:layout_width="186dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Karl Gustav"
-                android:textColor="@color/md_theme_light_surface"
-                android:textSize="16dp" />
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <TextView
+                <ImageView
+                    android:id="@+id/tourIV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/tour" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tourDatenTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tour 1"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tourObjekteTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Objekte: 50"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tourBeginnTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beginn: 8:00 Uhr"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tourEndeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ende: 14:00 Uhr"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tourNextTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nächste Tour"
+                        android:textColor="@color/design_default_color_secondary"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/workHourCV"
+            android:layout_width="186dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Heinrich-Heine-Straße 5a"
-                android:textColor="@color/md_theme_light_surface"
-                android:textSize="16dp" />
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <TextView
+                <ImageView
+                    android:id="@+id/workHourIV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/work_hour" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/workHourDatenTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arbeitspensum"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/workHourTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="120/100"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/workHourNextTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20 Überstunden"
+                        android:textColor="@color/md_theme_light_error"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/skillsCV"
+            android:layout_width="186dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="04425 Taucha"
-                android:textColor="@color/md_theme_light_surface"
-                android:textSize="16dp" />
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        </LinearLayout>
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/skillsIV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/skills" />
 
-    </com.google.android.material.card.MaterialCardView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/skillsDatenTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skills"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/skillsTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="F-Klasse: BE"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/skillsNextTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flexible: nein"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/skillsNextTV2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zertifikate: ja"
+                        android:textColor="@color/md_theme_light_surface"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="64dp"
+        android:text="Sonderauftrag"
+        android:textSize="16dp"/>
 
 
 </LinearLayout>

@@ -25,8 +25,8 @@ class Datasource {
             WorkLogSummary(
                 "urn:worklog:1",
                 8.0f,
-                40.0f,
-                160.0f,
+                16.0f,
+                16.0f,
                 8.0f,
                 40.0f,
                 160.0f
@@ -53,9 +53,9 @@ class Datasource {
             EmployeeStatusEnum.ACTIVE,
             WorkLogSummary(
                 "urn:worklog:2",
-                8.0f,
-                40.0f,
-                160.0f,
+                7.0f,
+                35.0f,
+                35.0f,
                 8.0f,
                 40.0f,
                 160.0f
@@ -113,7 +113,7 @@ class Datasource {
                 "urn:worklog:4",
                 8.0f,
                 40.0f,
-                160.0f,
+                40.0f,
                 8.0f,
                 40.0f,
                 160.0f
@@ -169,9 +169,9 @@ class Datasource {
             EmployeeStatusEnum.SUSPENDED,
             WorkLogSummary(
                 "urn:worklog:6",
+                2.0f,
                 8.0f,
-                40.0f,
-                160.0f,
+                8.0f,
                 8.0f,
                 40.0f,
                 160.0f
