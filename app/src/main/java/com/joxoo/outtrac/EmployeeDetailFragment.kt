@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.google.android.material.appbar.MaterialToolbar
 import com.joxoo.outtrac.data.model.Employee
+import com.joxoo.outtrac.data.model.Person
 import com.joxoo.outtrac.databinding.FragmentEmployeeDetailBinding
 import com.joxoo.outtrac.view.model.EmployeeViewModel
 
@@ -31,6 +32,8 @@ class EmployeeDetailFragment : Fragment() {
 
         viewModel.selectedEmployee.observe(viewLifecycleOwner) {
             binding.employeeNameTV.text = getFullName(it)
+            binding.employeeAddressTV.text = getEmployeeAddress(it.person)
+            binding.employeeOrtTV.text = it.person.address.city
         }
 
         requireActivity().findViewById<MaterialToolbar>(R.id.toolbar).title = viewModel.selectedEmployee.value?.person?.firstname
@@ -39,6 +42,10 @@ class EmployeeDetailFragment : Fragment() {
 
     private fun getFullName(employee: Employee): String {
         return "${employee.person.firstname} ${employee.person.lastname}"
+    }
+
+    private fun getEmployeeAddress(person: Person): String {
+        return person.address.street
     }
 
 

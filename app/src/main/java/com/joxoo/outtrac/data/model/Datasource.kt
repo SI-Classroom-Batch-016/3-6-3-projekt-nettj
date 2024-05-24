@@ -11,7 +11,7 @@ class Datasource {
                 "Wick",
                 "",
                 Address(
-                    "urn:address:1",
+                    "Waldemare-Streit-Str. 1",
                     "123 Main St",
                     "Anytown",
                     "NY",
@@ -40,7 +40,7 @@ class Datasource {
                 "Tarzan",
                 "",
                 Address(
-                    "urn:address:2",
+                    "Casper-Platz 1",
                     "456 Elm St",
                     "Othertown",
                     "NY",
@@ -69,7 +69,7 @@ class Datasource {
                 "Myers",
                 "",
                 Address(
-                    "urn:address:3",
+                    "Manfred-strauss-str. 1",
                     "789 Oak St",
                     "Thistown",
                     "NY",
@@ -98,7 +98,7 @@ class Datasource {
                 "Dill",
                 "",
                 Address(
-                    "urn:address:4",
+                    "Forststr. 1",
                     "101 Pine St",
                     "Thatplace",
                     "NY",
@@ -127,7 +127,7 @@ class Datasource {
                 "Daniels",
                 "",
                 Address(
-                    "urn:address:5",
+                    "Karl-heinz-str. 10",
                     "111 Maple St",
                     "Thistown",
                     "NY",
@@ -156,7 +156,7 @@ class Datasource {
                 "Kill",
                 "",
                 Address(
-                    "urn:address:6",
+                    "Schulstr. 9",
                     "101 Pine St",
                     "Thatplace",
                     "NY",
@@ -185,7 +185,7 @@ class Datasource {
                 "Doe",
                 "",
                 Address(
-                    "urn:address:7",
+                    "Robert-koch-str. 21b",
                     "111 Maple St",
                     "Thistown",
                     "NY",
@@ -214,7 +214,7 @@ class Datasource {
                 "Princess",
                 "",
                 Address(
-                    "urn:address:8",
+                    "Lindenstr. 11c",
                     "101 Pine St",
                     "Thatplace",
                     "NY",
@@ -244,7 +244,7 @@ class Datasource {
                 "Castle",
                 "",
                 Address(
-                    "urn:address:9",
+                    "Karl-Marx-Str. 13",
                     "101 Pine St",
                     "Thatplace",
                     "NY",
@@ -274,7 +274,7 @@ class Datasource {
                 "Wayne",
                 "",
                 Address(
-                    "urn:address:10",
+                    "Hauptstr. 1",
                     "101 Pine St",
                     "Thatplace",
                     "NY",
@@ -304,7 +304,7 @@ class Datasource {
                 "Kent",
                 "",
                 Address(
-                    "urn:address:11",
+                    "Heinrich-Heine-Str. 30",
                     "101 Pine St",
                     "Thatplace",
                     "NY",
