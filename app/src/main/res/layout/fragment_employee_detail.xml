@@ -37,7 +37,7 @@
             android:layout_width="186dp"
             android:layout_height="120dp"
             android:layout_marginStart="12dp"
-            android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+            android:backgroundTint="@color/md_theme_dark_onSecondaryContainer"
             android:orientation="vertical">
 
             <LinearLayout
@@ -108,7 +108,7 @@
             android:layout_width="186dp"
             android:layout_height="120dp"
             android:layout_marginStart="16dp"
-            android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+            android:backgroundTint="@color/md_theme_dark_onSecondaryContainer"
             android:orientation="vertical">
 
             <LinearLayout
@@ -183,7 +183,7 @@
             android:layout_height="120dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+            android:backgroundTint="@color/md_theme_dark_onSecondaryContainer"
             android:orientation="vertical">
 
             <LinearLayout
@@ -230,7 +230,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="20 Überstunden"
-                        android:textColor="@color/md_theme_light_error"
+                        android:textStyle="bold"
+                        android:background="@color/md_theme_dark_error"
+                        android:textColor="@color/md_theme_dark_onError"
                         android:textSize="12dp" />
 
                 </LinearLayout>
@@ -244,7 +246,7 @@
             android:layout_height="120dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+            android:backgroundTint="@color/md_theme_dark_onSecondaryContainer"
             android:orientation="vertical">
 
             <LinearLayout
